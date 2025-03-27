@@ -7,9 +7,10 @@
     <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
     <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
   </button>
-  My Application
+  Coding Exercise
   <span class="xxxx-menu-spacer"></span>
   <div>
+    <a mat-button [routerLink]="'/dashboard'"> Home </a>
     <a mat-button [routerLink]="'/about'"> About </a>
     <a mat-button [routerLink]="'/accounts'"> Accounts </a>
     <a mat-button [routerLink]="'/contact'"> Contact </a>
@@ -92,11 +93,11 @@
     <mat-expansion-panel [class.mat-elevation-z8]="true">
       <mat-expansion-panel-header> Child Applications </mat-expansion-panel-header>
       <mat-nav-list>
-        <button mat-button class="menu-button" routerLink="#">
+        <button mat-button class="menu-button" routerLink="/apple">
           <mat-icon>apple</mat-icon><span>Apple Application</span>
         </button>
 
-        <button mat-button class="menu-button" routerLink="#">
+        <button mat-button class="menu-button" routerLink="/android">
           <mat-icon>android</mat-icon><span>Android Application</span>
         </button>
       </mat-nav-list>

@@ -12,6 +12,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { ErrorModule } from './error/error.module';
 import { AboutModule } from './about/about.module';
 import { ContactModule } from './contact/contact.module';
+import { AppleModule } from './apple/apple.module';
+import { AndroidModule } from './android/android.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ContactModule } from './contact/contact.module';
     DashboardModule,
     ErrorModule,
     AboutModule,
-    ContactModule
+    ContactModule,
+    AndroidModule,
+    AppleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

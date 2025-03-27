@@ -1,8 +1,13 @@
 <div class="grid-container">
     <h1 class="mat-h1">Dashboard</h1>
     <div class="app-card">
-      <div class="application-list">Apple Application</div>
-      <div class="application-list">Android Application</div>
+      <div class="application-list"> <button mat-button class="menu-button" routerLink="/apple">
+        <mat-icon>apple</mat-icon><span>Apple Application</span>
+      </button></div>
+      <div class="application-list">
+        <button mat-button class="menu-button" routerLink="/android">
+          <mat-icon>android</mat-icon><span>Android Application</span>
+        </button></div>
     </div><br>
     <mat-grid-list cols="2" rowHeight="350px">
       <mat-grid-tile
