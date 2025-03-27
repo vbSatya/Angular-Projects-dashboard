@@ -10,9 +10,10 @@
   My Application
   <span class="xxxx-menu-spacer"></span>
   <div>
+    <a mat-button [routerLink]="'/about'"> About Work </a>
     <a mat-button [routerLink]="'/accounts'"> Accounts </a>
     <a mat-button [routerLink]="'/contacts'"> Contacts </a>
-    <a mat-button [routerLink]="'/about'"> About </a>
+
   </div>
   <span class="toolbar-item-spacer"></span>
 
@@ -57,7 +58,7 @@
       src="https://source.unsplash.com/c_GmwfHBDzk/200x200"
     />
 
-    <h4 class="name">John Smith</h4>
+    <h4 class="name">Satya Bandaru</h4>
     <p class="designation">Software Engineer</p>
 
     <mat-divider></mat-divider>
@@ -85,14 +86,14 @@
     <mat-divider></mat-divider>
 
     <mat-expansion-panel [class.mat-elevation-z8]="true">
-      <mat-expansion-panel-header> Mobile Phone </mat-expansion-panel-header>
+      <mat-expansion-panel-header> Child Applications </mat-expansion-panel-header>
       <mat-nav-list>
         <button mat-button class="menu-button" routerLink="#">
-          <mat-icon>apple</mat-icon><span>iOS</span>
+          <mat-icon>apple</mat-icon><span>Application one</span>
         </button>
 
         <button mat-button class="menu-button" routerLink="#">
-          <mat-icon>android</mat-icon><span>Android</span>
+          <mat-icon>android</mat-icon><span>Application 2</span>
         </button>
       </mat-nav-list>
     </mat-expansion-panel>
