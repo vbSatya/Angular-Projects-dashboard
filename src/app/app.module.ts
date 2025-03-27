@@ -11,10 +11,11 @@ import { SharedModule } from './shared/shared.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { ErrorModule } from './error/error.module';
 import { AboutModule } from './about/about.module';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +27,7 @@ import { AboutModule } from './about/about.module';
     DashboardModule,
     ErrorModule,
     AboutModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]

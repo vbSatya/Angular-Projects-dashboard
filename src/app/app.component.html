@@ -12,7 +12,7 @@
   <div>
     <a mat-button [routerLink]="'/about'"> About Work </a>
     <a mat-button [routerLink]="'/accounts'"> Accounts </a>
-    <a mat-button [routerLink]="'/contacts'"> Contacts </a>
+    <a mat-button [routerLink]="'/contact'"> Contacts </a>
 
   </div>
   <span class="toolbar-item-spacer"></span>
@@ -75,6 +75,10 @@
       <mat-icon>info</mat-icon>
       <span>About</span>
     </button>
+    <button mat-button class="menu-button" routerLink="/contact">
+      <mat-icon>info</mat-icon>
+      <span>Contact</span>
+    </button>
 
     <mat-divider></mat-divider>
 
@@ -89,11 +93,11 @@
       <mat-expansion-panel-header> Child Applications </mat-expansion-panel-header>
       <mat-nav-list>
         <button mat-button class="menu-button" routerLink="#">
-          <mat-icon>apple</mat-icon><span>Application 1</span>
+          <mat-icon>apple</mat-icon><span>Apple Application</span>
         </button>
 
         <button mat-button class="menu-button" routerLink="#">
-          <mat-icon>android</mat-icon><span>Application 2</span>
+          <mat-icon>android</mat-icon><span>Android Application</span>
         </button>
       </mat-nav-list>
     </mat-expansion-panel>
