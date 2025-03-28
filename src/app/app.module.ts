@@ -15,7 +15,7 @@ import { AboutModule } from './about/about.module';
 import { ContactModule } from './contact/contact.module';
 import { AppleModule } from './apple/apple.module';
 import { AndroidModule } from './android/android.module';
-
+import { MatSelectModule } from '@angular/material/select';
 import { UserService } from './services/user.service';
 
 @NgModule({
@@ -23,6 +23,7 @@ import { UserService } from './services/user.service';
     AppComponent,
   ],
   imports: [
+    MatSelectModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
