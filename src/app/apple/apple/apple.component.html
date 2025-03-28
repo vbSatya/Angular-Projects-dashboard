@@ -1,1 +1,35 @@
-<p>Apple Application works!</p>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Email</th>
+        <th scope="col">Website</th>
+        <th scope="col">Address</th>
+        <th scope="col">Company Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userList">
+        <th scope="row">{{ user.id }}</th>
+        <td>{{ user.name }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.website }}</td>
+        <td>
+          <p>Street : {{ user.address.street }}</p>
+          <p>Suite : {{ user.address.suite }}</p>
+          <p>City : {{ user.address.city }}</p>
+          <p>Zipcode : {{ user.address.zipcode }}</p>
+          <p>Geo : {{ user.address.geo.lat }}, {{ user.address.geo.lng }}</p>
+        </td>
+        <td>
+          <p>company Name : {{ user.company.name }}</p>
+          <p>Catch Phrase : {{ user.company.catchPhrase }}</p>
+          <p>BS : {{ user.company.bs }}</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

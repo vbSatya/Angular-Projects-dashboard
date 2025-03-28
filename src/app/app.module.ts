@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { AboutModule } from './about/about.module';
 import { ContactModule } from './contact/contact.module';
 import { AppleModule } from './apple/apple.module';
 import { AndroidModule } from './android/android.module';
+
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -31,9 +34,10 @@ import { AndroidModule } from './android/android.module';
     AboutModule,
     ContactModule,
     AndroidModule,
-    AppleModule
+    AppleModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

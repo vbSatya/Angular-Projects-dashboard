@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-apple',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./apple.component.css']
 })
 export class AppleComponent {
+  name = 'Angular ' + VERSION.major;
+  userList: any;
+
+  constructor(private userService: UserService) {}
+
+  ngOnInit() {
+    this.getUserDetails();
+  }
+
+  getUserDetails() {
+    this.userService.getUserList().subscribe((response: any) => {
+      this.userList = response;
+    });
+  }
 
 }
