@@ -17,12 +17,26 @@ import { AppleModule } from './apple/apple.module';
 import { AndroidModule } from './android/android.module';
 import { MatSelectModule } from '@angular/material/select';
 import { UserService } from './services/user.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatAlertComponent } from './ng-material/mat-alert/mat-alert.component';
+import { MatConfirmComponent } from './ng-material/mat-confirm/mat-confirm.component';
+import { MatInputPromptComponent } from './ng-material/mat-input-prompt/mat-input-prompt.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    MatAlertComponent,
+    MatConfirmComponent,
+    MatInputPromptComponent,
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
+    MatToolbarModule, 
+    MatFormFieldModule, 
     MatSelectModule,
     BrowserModule,
     AppRoutingModule,

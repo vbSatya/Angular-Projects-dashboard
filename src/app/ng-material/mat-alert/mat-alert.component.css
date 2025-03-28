@@ -1,0 +1,13 @@
+.mat-icon {
+    user-select: none;
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    overflow: hidden;
+    float: right;
+}
+.alert{
+    margin-left:20px;
+}
